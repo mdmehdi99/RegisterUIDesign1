@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/titleSignUpID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#1a0dab"
+        android:text="SIGN UP"
+        android:paddingTop="15dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:drawableLeft="@drawable/signup"
+        android:textAlignment="center"
+        android:textColor="#ffffff"/>
+    <EditText
+        android:id="@+id/NameID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name "
+        android:text="Name "
+        android:layout_below="@+id/titleSignUpID"
+        android:textColor="#ffffff"/>
+
+
+    <EditText
+        android:id="@+id/usernameID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username "
+        android:text="Username "
+        android:layout_below="@id/NameID"
+        android:layout_marginTop="15dp"
+        android:textColor="#ffffff"/>
+    <EditText
+        android:id="@+id/EmailID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email "
+        android:text="Email "
+        android:textColor="#ffffff"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/usernameID"/>
+    <EditText
+        android:id="@+id/passwordID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:text="Password"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/EmailID"
+        android:textColor="#ffffff"/>
+    <EditText
+        android:id="@+id/confirmPasswordID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Confirm Password"
+        android:text="Confirm Password"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/passwordID"
+        android:textColor="#ffffff"/>
+    <EditText
+        android:id="@+id/AgeID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Age "
+        android:text="Age "
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/confirmPasswordID"
+        android:textColor="#ffffff"/>
+    <EditText
+        android:id="@+id/QualificationID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Qualification "
+        android:text="Qualificatioin "
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/AgeID"
+        android:textColor="#ffffff"/>
+    <EditText
+        android:id="@+id/AddressID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Address "
+        android:text="Address "
+        android:layout_below="@id/QualificationID"
+        android:layout_marginTop="15dp"
+        android:textColor="#ffffff"/>
+    <EditText
+        android:id="@+id/StateID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="State "
+        android:text="State "
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/AddressID"
+        android:textColor="#ffffff"/>
+    <EditText
+        android:id="@+id/ZipcodeID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Zipcode "
+        android:text="Zipcode "
+        android:layout_below="@id/StateID"
+        android:layout_marginTop="15dp"
+        android:textColor="#ffffff"
+        />
+    <RadioGroup
+        android:id="@+id/radioGroupID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ZipcodeID"
+        android:orientation="horizontal"
+        android:background="#ffffff"
+        android:layout_marginTop="15dp">
+        <TextView
+            android:id="@+id/genderID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gender"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+        <RadioButton
+            android:id="@+id/MaleID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:checked="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+        <RadioButton
+            android:id="@+id/FemaleID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"/>
+    </RadioGroup>
+    <EditText
+        android:id="@+id/countryID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Country"
+        android:text="Country"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/radioGroupID"
+        android:textColor="#ffffff"
+        tools:ignore="NotSibling" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_below="@id/countryID">
+    <Button
+        android:id="@+id/submitID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:textAllCaps="false"
+        android:layout_weight="1"
+        android:layout_below="@id/countryID"
+        android:textColor="#ffffff"
+        android:layout_marginTop="15dp"/>
+    <Button
+        android:id="@+id/ResetID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        android:layout_weight="1"
+        android:layout_marginTop="15dp"
+        android:textColor="#ffffff" />
+    </LinearLayout>
+</RelativeLayout>
+</ScrollView>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:gravity="center">
+    <ImageView
+        android:id="@+id/imagescrollHorizontalID"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/food"
+        android:scaleType="fitXY"/>
+    <TextView
+        android:id="@+id/imageBottomTitleID"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Chicken"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:textColor="#000000"/>
+</LinearLayout>
