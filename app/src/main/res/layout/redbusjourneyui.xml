@@ -9,7 +9,9 @@
         android:layout_height="100dp"
         android:orientation="vertical"
         android:padding="5dp"
-        android:background="#ffffff">
+        android:background="#ffffff"
+        android:id="@+id/chooseDateID"
+        android:clickable="true">
         <TextView
             android:id="@+id/journeydateID"
             android:layout_width="match_parent"
